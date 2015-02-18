@@ -1433,6 +1433,7 @@ static int __init ath6kl_sdio_init(void)
 	int ret;
 
 #ifdef ATH6KL_ENABLE_ANDROID
+	printk(KERN_INFO "CMTP-ATH6KL v2014-12-21\n");
 	ath6kl_sdio_init_android();
 #endif
 	ret = sdio_register_driver(&ath6kl_sdio_driver);
